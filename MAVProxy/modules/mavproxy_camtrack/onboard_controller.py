@@ -139,7 +139,7 @@ class CameraTrackingTargetData(Enum):
     https://mavlink.io/en/messages/common.html#CAMERA_TRACKING_TARGET_DATA
     """
 
-    NONE = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_NONE
+    #NONE = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_NONE
     EMBEDDED = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_EMBEDDED
     RENDERED = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_RENDERED
     IN_STATUS = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_IN_STATUS
