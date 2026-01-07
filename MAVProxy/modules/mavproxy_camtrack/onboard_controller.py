@@ -72,8 +72,7 @@ from MAVProxy.modules.lib.pid_basic import AP_PIDInfo
 from MAVProxy.modules.lib.pid_basic import constrain_float
 
 
-gi.require_version("Gst", "1.0")
-from gi.repository import Gst
+
 
 # The main loop rate (Hz) is max rate that the main loop will run at.
 # In practice it is limited by the video framerate and tracker update time.
@@ -139,7 +138,7 @@ class CameraTrackingTargetData(Enum):
     https://mavlink.io/en/messages/common.html#CAMERA_TRACKING_TARGET_DATA
     """
 
-    #NONE = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_NONE
+    NONE = 0
     EMBEDDED = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_EMBEDDED
     RENDERED = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_RENDERED
     IN_STATUS = mavutil.mavlink.CAMERA_TRACKING_TARGET_DATA_IN_STATUS
