@@ -302,7 +302,7 @@ class OnboardController:
         """
         while True:
             self._connection.mav.heartbeat_send(
-                type=mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,
+                type=mavutil.mavlink.MAV_TYPE_CAMERA,
                 autopilot=mavutil.mavlink.MAV_AUTOPILOT_INVALID,
                 base_mode=0,
                 custom_mode=0,
